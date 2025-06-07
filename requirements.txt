@@ -1,32 +1,30 @@
 # Core LLM and RAG libraries
-langchain
-langchain-community
-langchain-core
-langchain_huggingface
-langchain_chroma
-langchain_ollama
-box
+langchain==0.0.162
+langchain-community==0.0.2
+langchain-core==0.0.162
+langchain_huggingface==0.0.1
+langchain_chroma==0.3.21
+langchain_ollama==0.0.1
+box==6.0.2
 
-PyPDF2
+# PDF Handling Libraries
+pypdf==3.8.1
+langchain-text-splitters==0.0.2
 
 # For creating the web user interface
-streamlit
-
-# For loading and splitting PDF documents
-pypdf
-langchain-text-splitters
+streamlit==1.13.0
 
 # Vector database for storing embeddings
-# chromadb is another popular alternative
+chromadb==0.3.21
 
 # To connect with the local Ollama service
-ollama
+ollama==0.3.0
 
 # For reading configuration files (like config.yml)
-pyyaml
+pyyaml==6.0
 
 # For handling environment variables
-python-dotenv
+python-dotenv==0.19.2
 
 # For making HTTP requests (useful in client-server setups)
-requests
+requests==2.28.2
