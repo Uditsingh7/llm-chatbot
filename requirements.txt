@@ -6,9 +6,6 @@ langchain_huggingface
 langchain_chroma
 langchain_ollama
 box
-timeit
-shutil
-argparse
 
 PyPDF2
 
