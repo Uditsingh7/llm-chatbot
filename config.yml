@@ -1,0 +1,13 @@
+CHUNK_SIZE: 100
+CHUNK_OVERLAP: 20
+NUM_RESULTS: 2
+DATA_PATH: "data/"
+EMBEDDINGS: "sentence-transformers/all-mpnet-base-v2"
+VECTOR_DB: "vectorstore/lore"
+NORMALIZE_EMBEDDINGS: true
+COLLECTION_NAME: "lore"
+DEVICE: "cpu"
+VECTOR_SPACE: "cosine"
+LLM: "llama3"
+TEMPERATURE: 0.1
+MAX_TOKENS: 512

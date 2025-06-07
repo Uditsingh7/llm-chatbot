@@ -1,0 +1,87 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Environment files
+.env
+*.env
+*.venv
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Conda environment files
+*.conda
+# *.yml
+*.yaml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Pip wheel packages
+*.whl
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Language models / vector stores
+vectorstore/
+*.bin
+*.pt
+*.ckpt
+*.safetensors
+
+# Huggingface cache
+~/.cache/huggingface/
+huggingface/
+
+# Local data
+data/
+*.pdf
+*.docx
+
+# Model outputs
+*.jsonl
+*.json
+
+# Misc
+*.sqlite3
+*.db
+*.bak
