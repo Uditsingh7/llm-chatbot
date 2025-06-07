@@ -22,7 +22,7 @@ def run_injest(documents):
     
     ## Load configuration from YAML file
     with open("config.yml", 'r', encoding='utf-8') as file:
-        cfg = box.Box(yaml.safe_laod(file))
+        cfg = box.Box(yaml.safe_load(file))
         
     ## Initialize the text splitter
     text_splitter = RecursiveCharacterTextSplitter(
@@ -31,13 +31,13 @@ def run_injest(documents):
         # length_function=len
     )
     
-    splits = text_splitter.split_documents(documents)
+    splits = text_splitter.split_text(documents)
     texts = text_splitter.create_documents(splits)
     print(f"Number of chunks created: {len(texts)}")
     
     ## Initialize the embedding model
     embeddings = HuggingFaceEmbeddings(
-        mdoel_name=cfg.EMBEDDINGS,
+        model_name=cfg.EMBEDDINGS,
         encode_kwargs={
             'normalize_embeddings':cfg.NORMALIZE_EMBEDDINGS
         },
